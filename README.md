@@ -8,7 +8,7 @@ Logistic regression can be used for categorical classification. In our case, we 
 
 To do that, a logistic / sigmoid function will be fitted to the data. This function tends to 1 as z -> infinite and to 0 as z -> -infinite, and is as follows:
 
-<center>$h(z) = \frac{1}{1 + \exp{z}}$</center>
+![](https://latex.codecogs.com/gif.latex?h(z)&space;=&space;\frac{1}{1&plus;\exp{z}})
 
 To obtain a 0 or 1 output, one just simply sets a threshold at 0.5: everything below is zero and everything above is one.
 
@@ -16,7 +16,7 @@ Having a dataset with a series of samples, each of those with their given featur
 
 ![](https://latex.codecogs.com/gif.latex?$z&space;=&space;X\theta$)
 
-<center>$h(X\theta) = \frac{1}{1 + \exp{X\theta}}$</center>
+![](https://latex.codecogs.com/gif.latex?h(X\theta)&space;=&space;\frac{1}{1&space;&plus;&space;\exp{X\theta}})
 
 Where X is the matrix of [samples] rows and [features] columns, and theta is the vector of the model parameters (weights of our regressor).
 
@@ -24,15 +24,15 @@ The objective will be to obtain that theta vector given a set of X and y([0,1]),
 
 The cost function J of a logistic regression problem is the following:
 
-<center>$J(\theta) = -\frac{1}{n} \sum_{i = 1}^{n} (y*log(h(X\theta) + (1-y)*log(1-h(X\theta))$</center>
+![](https://latex.codecogs.com/gif.latex?J(\theta)&space;=&space;-\frac{1}{n}&space;\sum_{i&space;=&space;1}^{n}&space;(y*log(h(X\theta)&space;&plus;&space;(1-y)*log(1-h(X\theta)))
 
 To find the theta that minimizes the error between the predicted and the real data, an iterative process where that cost function is derived to find its minimum and update the theta parameters to go towards it will be applied. This is called gradient descent:
 
-<center>$\theta = \theta - \frac{\delta J(\theta)}{\delta\theta}$</center>
+![](https://latex.codecogs.com/gif.latex?\theta&space;=&space;\theta&space;-&space;\frac{\delta&space;J(\theta)}{\delta\theta})
 
 with
 
-<center>$\frac{\delta J(\theta)}{\delta\theta} = \frac{1}{n} X^{T}[h(X) - y]$</center>
+![](https://latex.codecogs.com/gif.latex?\frac{\delta&space;J(\theta)}{\delta\theta}&space;=&space;\frac{1}{n}&space;X^{T}[h(X)&space;-&space;y])
 
 Different ways to update the parameter in function of the gradient can be applied (once for every data entry, once for all the dataset...). In this case, it has been decided to do it in small batches, thus we will be appliying minibatch gradient descent.
 
