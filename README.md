@@ -24,7 +24,7 @@ The objective will be to obtain that theta vector given a set of X and y([0,1]),
 
 The cost function J of a logistic regression problem is the following:
 
-![](https://latex.codecogs.com/gif.latex?J(\theta)&space;=&space;-\frac{1}{n}&space;\sum_{i&space;=&space;1}^{n}&space;(y*log(h(X\theta)&space;&plus;&space;(1-y)*log(1-h(X\theta)))
+![](https://latex.codecogs.com/gif.latex?J(\theta)&space;=&space;-\frac{1}{n}&space;\sum_{i&space;=&space;1}^{n}&space;(y*log(h(X\theta)&space;&plus;&space;(1-y)*log(1-h(X\theta))))
 
 To find the theta that minimizes the error between the predicted and the real data, an iterative process where that cost function is derived to find its minimum and update the theta parameters to go towards it will be applied. This is called gradient descent:
 
