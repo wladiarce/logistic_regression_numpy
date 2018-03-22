@@ -14,7 +14,7 @@ To obtain a 0 or 1 output, one just simply sets a threshold at 0.5: everything b
 
 Having a dataset with a series of samples, each of those with their given features, we can express z in matrix form as follows:
 
-<center>$z = X\theta$</center>
+![](https://latex.codecogs.com/gif.latex?$z&space;=&space;X\theta$)
 
 <center>$h(X\theta) = \frac{1}{1 + \exp{X\theta}}$</center>
 
