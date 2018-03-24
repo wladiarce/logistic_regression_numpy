@@ -8,7 +8,7 @@ Logistic regression can be used for categorical classification. In our case, we 
 
 To do that, a logistic / sigmoid function will be fitted to the data. This function tends to 1 as z -> infinite and to 0 as z -> -infinite, and is as follows:
 
-<center>![](https://latex.codecogs.com/gif.latex?h(z)&space;=&space;\frac{1}{1&plus;\exp{z}})</center>
+![](https://latex.codecogs.com/gif.latex?h(z)&space;=&space;\frac{1}{1&plus;\exp{z}})
 
 To obtain a 0 or 1 output, one just simply sets a threshold at 0.5: everything below is zero and everything above is one.
 
