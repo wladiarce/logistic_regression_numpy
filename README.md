@@ -10,7 +10,7 @@ To do that, a logistic / sigmoid function will be fitted to the data. This funct
 
 ![](https://latex.codecogs.com/gif.latex?h(z)&space;=&space;\frac{1}{1&plus;\exp{z}})
 
-$h(z) = \frac{1}{1 + \exp{z}}$
+$$h(z) = \frac{1}{1 + \exp{z}}$$
 
 To obtain a 0 or 1 output, one just simply sets a threshold at 0.5: everything below is zero and everything above is one.
 
